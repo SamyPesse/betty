@@ -1,8 +1,8 @@
 ![Betty](https://github.com/SamyPesse/betty/blob/master/betty.png?raw=true)
 
-Betty (or Ben for the ones who prefer a man receiptionist) is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your organization is operating in the US but based in another countries.
+Betty (or Ben for the ones who prefer a male receiptionist) is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your organization is operating in the US but based in another countries.
 
-Betty is build using Twilio and Node.js and can be deployed to Heroku or any server easily.
+Betty is easy to setup and build on top of Twilio and Node.js. It can be deployed to Heroku or any unix server.
 
 ### What Betty can do?
 
@@ -30,7 +30,24 @@ A team member can also contact Betty to get access to th organization directory 
 
 ### Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+Deploy Betty in one click to Heroku using the button [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+Or run it on your own machine:
+
+```
+# Clone Betty locally
+$ git clone https://github.com/SamyPesse/betty.git
+$ cd betty
+
+# Install dependencies
+$ npm i
+
+# Configure it
+$ export TEAM=Samy:+140145170479,Aaron:+147145670479
+
+# And finally start it
+$ node ./betty.js
+```
 
 ### Configuration
 
