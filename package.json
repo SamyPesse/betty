@@ -1,0 +1,12 @@
+{
+	"name": "",
+	"version": "0.0.0",
+	"main": "./lib/index.js",
+	"dependencies": {
+		"express": "4.12.3",
+		"twilio": "2.0.0",
+		"lodash": "3.7.0",
+		"q": "1.2.0",
+		"body-parser": "1.12.3"
+	}
+}
