@@ -4,9 +4,9 @@ Betty (or Ben for the ones who prefer a man receiptionist) is your own cutomizab
 
 Betty is build using Twilio and Node.js and can be deployed to Heroku or any server easily.
 
-#### What Betty can do?
+### What Betty can do?
 
-##### One phone number for your organization, anywhere in the world.
+##### One phone number for your all your organization
 
 Betty is running on top of one or more phone numbers that represent your organization.
 
@@ -28,11 +28,11 @@ This also works for text messages, simply text Betty with somthing like `Please 
 
 A team member can also contact Betty to get access to th organization directory (by phone call or sms), example: just text Betty with: `What is Aaron's phone number?`.
 
-#### Deployment
+### Deployment
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-#### Configuration
+### Configuration
 
 Configuration is done using environment variables:
 
