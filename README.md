@@ -1,4 +1,4 @@
-![Betty](https://raw.github.com/SamyPesse/betty/master/betty.png)
+![Betty](https://github.com/SamyPesse/betty/blob/master/betty.png?raw=true)
 
 Betty is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your company is operating in the US but based in another countries.
 
