@@ -1,0 +1,7 @@
+{
+	"name": "Betty",
+	"description": "Simple but efficient phone receiptionist",
+	"repository": "https://github.com/SamyPesse/betty",
+	"logo": "https://node-js-sample.herokuapp.com/node.svg",
+	"keywords": ["receiptionist", "phone", "sms", "betty", "twilio"]
+}
