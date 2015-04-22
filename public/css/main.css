@@ -124,13 +124,21 @@ a img {
 :focus {
   outline: 0;
 }
-.list-calls {
+.list {
   width: 100%;
   background: #fff;
 }
-.list-calls tr td {
+.list tr td {
   padding: 14px 10px;
   border-bottom: 1px solid #ececec;
+  vertical-align: middle;
+}
+.list tr td .list-icon {
+  font-size: 24px;
+  text-align: center;
+}
+.list tr td .list-icon .secondary {
+  font-size: 14px;
 }
 .panel {
   margin: 20px 0px;
@@ -157,6 +165,9 @@ a img {
 }
 .navigation .tab.active {
   border-bottom-color: #0288d1;
+}
+* {
+  box-sizing: border-box;
 }
 body {
   background-color: #e5e5e5;

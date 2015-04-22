@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="panel">
+        <table class="list list-sms">
+            {% for mesg in messages.list %}
+            <tr>
+                <td>
+                    <div class="list-icon">
+                        <i class="ion-android-textsms"></i>
+                    </div>
+                </td>
+                <td>{{ msg.from.phone }}</td>
+                <td>{{ msg.to.phone }}</td>
+                <td>{{ msg.body }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

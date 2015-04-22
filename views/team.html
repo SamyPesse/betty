@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="panel">
+        <table class="list list-team">
+            {% for user in team %}
+            <tr>
+                <td>
+                    <div class="list-icon">
+                        <i class="ion-android-contact"></i>
+                    </div>
+                </td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.phone }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
