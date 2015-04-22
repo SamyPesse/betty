@@ -34,6 +34,12 @@ A team member can also contact Betty to get access to th organization directory 
 
 Betty can be configured to use another profile (voice, language, sentencesm etc.). Change your receiptionist by changing the `PROFILE` environment variable (see below).
 
+| ID | Name | Voice | Language |
+| -- | ---- | ----- | -------- |
+| `betty` | Betty | woman (alice) | `en-us` |
+| `ben` | Ben | man | `en-us` |
+| `catherine` | Catherine | woman (alice) | `fr-fr` |
+
 ### Deployment
 
 Deploy Betty in one click to Heroku using the button [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
