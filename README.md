@@ -74,9 +74,28 @@ Configuration is done using environment variables:
 | ------------ | ------------------- |
 | `PORT`       | Port for running the application (Default is `3000`) |
 | `HOST`       | Hostname where the application is accessible |
+| `SECRET`     | Password for authentication in the dashboard and api |
 | `PROFILE`    | Receptionist profile to use |
 | `PHONES`     | List of phone numbers used by Betty separated by commas |
 | `ORG_NAME`   | Name of the organization |
 | `TEAM`       | Comma separated list of team members in the format `name:phone`, example `TEAM=Samy:+15674895678,Aaron:+15674995678` |
 | `TWILIO_SID` | API Application SID for Twilio |
 | `TWILIO_TOKEN` | API Application Token for Twilio |
+
+### API
+
+Betty provides a REST API with the same features that the dashboard:
+
+```
+Get a quick status of Betty:
+GET /api/
+
+List team members:
+GET /api/team
+
+List calls:
+GET /api/calls
+
+Details about a specific call:
+GET /api/calls/<id>
+```
