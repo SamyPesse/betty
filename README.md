@@ -28,6 +28,12 @@ This also works for text messages, simply text Betty with somthing like `Please 
 
 A team member can also contact Betty to get access to th organization directory (by phone call or sms), example: just text Betty with: `What is Aaron's phone number?`.
 
+### The Receptionists Team
+
+![Team](https://github.com/SamyPesse/betty/blob/master/assets/team.png?raw=true)
+
+Betty can be configured to use another profile (voice, language, sentencesm etc.). Change your receiptionist by changing the `PROFILE` environment variable (see below).
+
 ### Deployment
 
 Deploy Betty in one click to Heroku using the button [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
@@ -68,15 +74,9 @@ Configuration is done using environment variables:
 | ------------ | ------------------- |
 | `PORT`       | Port for running the application (Default is `3000`) |
 | `HOST`       | Hostname where the application is accessible |
-| `PROFILE`    | Receptionist profile to use (see below) |
+| `PROFILE`    | Receptionist profile to use |
 | `PHONES`     | List of phone numbers used by Betty separated by commas |
 | `ORG_NAME`   | Name of the organization |
 | `TEAM`       | Comma separated list of team members in the format `name:phone`, example `TEAM=Samy:+15674895678,Aaron:+15674995678` |
 | `TWILIO_SID` | API Application SID for Twilio |
 | `TWILIO_TOKEN` | API Application Token for Twilio |
-
-### Your Receptionists Team
-
-![Team](https://github.com/SamyPesse/betty/blob/master/assets/team.png?raw=true)
-
-Change your receiptionist by changing the `PROFILE` environment variable.
