@@ -1,4 +1,4 @@
-![Betty](https://github.com/SamyPesse/betty/blob/master/assets/betty.png?raw=true)
+![Betty](https://github.com/SamyPesse/betty/blob/master/public/images/betty.png?raw=true)
 
 Betty (or Ben for the ones who prefer a male receiptionist) is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your organization is operating in the US but based in another countries.
 
@@ -32,7 +32,7 @@ A team member can also contact Betty to get access to th organization directory 
 
 ### The Receptionists Team
 
-![Team](https://github.com/SamyPesse/betty/blob/master/assets/team.png?raw=true)
+![Team](https://github.com/SamyPesse/betty/blob/master/public/images/team.png?raw=true)
 
 Betty can be configured to use another profile (voice, language, sentencesm etc.). Change your receiptionist by changing the `PROFILE` environment variable (see below).
 

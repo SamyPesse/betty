@@ -21,7 +21,9 @@
     },
     "devDependencies": {
         "mocha": "2.2.4",
-        "chai": "2.2.0"
+        "chai": "2.2.0",
+        "gulp": "3.8.11",
+        "gulp-less": "3.0.3"
     },
     "scripts": {
         "test": "mocha --reporter list"
