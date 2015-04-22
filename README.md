@@ -2,7 +2,9 @@
 
 Betty (or Ben for the ones who prefer a male receiptionist) is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your organization is operating in the US but based in another countries.
 
-Betty is easy to setup and build on top of Twilio and Node.js. It can be deployed to Heroku or any unix server.
+Betty is easy to setup and build on top of Twilio and Node.js, it doesn't necessitate a database (stateless). It can be deployed to Heroku or any unix server.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ### What Betty can do?
 
@@ -34,17 +36,15 @@ A team member can also contact Betty to get access to th organization directory 
 
 Betty can be configured to use another profile (voice, language, sentencesm etc.). Change your receiptionist by changing the `PROFILE` environment variable (see below).
 
-| ID | Name | Voice | Language |
-| -- | ---- | ----- | -------- |
-| `betty` | Betty | woman (alice) | `en-us` |
-| `ben` | Ben | man | `en-us` |
-| `catherine` | Catherine | woman (alice) | `fr-fr` |
+| ID          | Name | Voice | Language | Personality |
+| ----------- | ---- | ----- | -------- | ----------- |
+| `betty`     | Betty | woman (alice) | `en-us` | Friendly and welcoming young woman |
+| `ben`       | Ben | man | `en-us` | Official and efficient reciptionist |
+| `catherine` | Catherine | woman (alice) | `fr-fr` | Classy french woman |
 
 ### Deployment
 
-Deploy Betty in one click to Heroku using the button [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-Or run it on your own machine:
+Deploy Betty to your own machine using:
 
 ```
 # Clone Betty locally
@@ -56,6 +56,7 @@ $ npm i
 
 # Configure it
 $ export TEAM=Samy:+140145170479,Aaron:+147145670479
+...
 
 # And finally start it
 $ node ./betty.js
