@@ -1,40 +1,40 @@
 {
-	"name": "betty",
-	"version": "0.0.0",
-	"description": "Virtual and customizable receptionist built on top of Twilio",
-	"homepage": "https://github.com/SamyPesse/betty",
-	"license": "Apache-2.0",
-	"main": "./lib/index.js",
-	"dependencies": {
-		"express": "4.12.3",
-		"twilio": "2.0.0",
-		"lodash": "3.7.0",
-		"q": "1.2.0",
-		"body-parser": "1.12.3",
-		"phone-regex": "2.0.0",
-		"morgan": "1.5.2",
-		"node-phonenumber": "0.2.1",
-		"basic-auth": "1.0.0",
-		"natural": "0.2.1"
-	},
-	"devDependencies": {
-		"mocha": "2.2.4",
-		"chai": "2.2.0"
-	},
+    "name": "betty",
+    "version": "0.0.0",
+    "description": "Virtual and customizable receptionist built on top of Twilio",
+    "homepage": "https://github.com/SamyPesse/betty",
+    "license": "Apache-2.0",
+    "main": "./lib/index.js",
+    "dependencies": {
+        "express": "4.12.3",
+        "twilio": "2.0.0",
+        "lodash": "3.7.0",
+        "q": "1.2.0",
+        "body-parser": "1.12.3",
+        "phone-regex": "2.0.0",
+        "morgan": "1.5.2",
+        "node-phonenumber": "0.2.1",
+        "basic-auth": "1.0.0",
+        "natural": "0.2.1"
+    },
+    "devDependencies": {
+        "mocha": "2.2.4",
+        "chai": "2.2.0"
+    },
     "scripts": {
         "test": "mocha --reporter list"
     },
     "bugs": {
-    	"url": "https://github.com/SamyPesse/betty"
+        "url": "https://github.com/SamyPesse/betty"
     },
     "authors": [
-	    {
-	    	"name": "Samy Pesse",
-	    	"email": "samypesse@gmail.com"
-	    }
-	],
-	"repository": {
-		"type" : "git",
-		"url" : "https://github.com/SamyPesse/betty.git"
-	}
+        {
+            "name": "Samy Pesse",
+            "email": "samypesse@gmail.com"
+        }
+    ],
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/SamyPesse/betty.git"
+    }
 }
