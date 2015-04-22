@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="panel">
+        <table class="list-calls">
+            {% for call in calls.list %}
+            <tr>
+                <td>{{ call.from.phone }}</td>
+                <td>{{ call.to.phone }}</td>
+                <td>{{ call.startTime|relativeDate }}</td>
+                <td>{{ call.duration }}s</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
