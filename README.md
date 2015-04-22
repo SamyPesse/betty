@@ -57,6 +57,7 @@ Configuration is done using environment variables:
 | ------------ | ------------------- |
 | `PORT`       | Port for running the application (Default is `3000`) |
 | `HOST`       | Hostname where the application is accessible |
+| `NUMBERS`    | List of phone numbers used by Betty separated by commas |
 | `TEAM`       | Comma separated list of team members in the format `name:phone`, example `TEAM=Samy:+15674895678,Aaron:+15674995678` |
 | `TWILIO_SID` | API Application SID for Twilio |
 | `TWILIO_TOKEN` | API Application Token for Twilio |
