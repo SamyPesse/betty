@@ -1,14 +1,14 @@
 {
-	"name": "Betty",
-	"description": "Simple but efficient phone receiptionist",
-	"repository": "https://github.com/SamyPesse/betty",
-	"logo": "https://node-js-sample.herokuapp.com/node.svg",
-	"keywords": ["receiptionist", "phone", "sms", "betty", "twilio"],
+    "name": "Betty",
+    "description": "Virtual and customizable receptionist built on top of Twilio",
+    "repository": "https://github.com/SamyPesse/betty",
+    "logo": "https://node-js-sample.herokuapp.com/node.svg",
+    "keywords": ["receiptionist", "phone", "sms", "betty", "twilio"],
     "env": {
-    	"HOST": {
+        "HOST": {
             "description": "Hostanem where Betty will be running"
         },
-    	"TEAM": {
+        "TEAM": {
             "description": "List of members separated by commas in format: name:phone"
         },
         "TWILIO_SID": {
