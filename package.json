@@ -15,7 +15,9 @@
         "morgan": "1.5.2",
         "node-phonenumber": "0.2.1",
         "basic-auth": "1.0.0",
-        "natural": "0.2.1"
+        "natural": "0.2.1",
+        "nunjucks": "1.3.3",
+        "moment": "2.10.2"
     },
     "devDependencies": {
         "mocha": "2.2.4",
