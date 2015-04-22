@@ -1,4 +1,4 @@
-![Betty](https://github.com/SamyPesse/betty/blob/master/betty.png?raw=true)
+![Betty](https://github.com/SamyPesse/betty/blob/master/assets/betty.png?raw=true)
 
 Betty (or Ben for the ones who prefer a male receiptionist) is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your organization is operating in the US but based in another countries.
 
@@ -68,8 +68,15 @@ Configuration is done using environment variables:
 | ------------ | ------------------- |
 | `PORT`       | Port for running the application (Default is `3000`) |
 | `HOST`       | Hostname where the application is accessible |
+| `PROFILE`    | Receptionist profile to use (see below) |
 | `PHONES`     | List of phone numbers used by Betty separated by commas |
 | `ORG_NAME`   | Name of the organization |
 | `TEAM`       | Comma separated list of team members in the format `name:phone`, example `TEAM=Samy:+15674895678,Aaron:+15674995678` |
 | `TWILIO_SID` | API Application SID for Twilio |
 | `TWILIO_TOKEN` | API Application Token for Twilio |
+
+### Your Receptionists Team
+
+![Team](https://github.com/SamyPesse/betty/blob/master/assets/team.png?raw=true)
+
+Change your receiptionist by changing the `PROFILE` environment variable.
