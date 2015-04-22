@@ -49,6 +49,17 @@ $ export TEAM=Samy:+140145170479,Aaron:+147145670479
 $ node ./betty.js
 ```
 
+Configure your Twilio phone number to use:
+
+```
+* Voice
+   * Request URL: {host}/twiml/call
+   * Fallback URL: {host}/twiml/call/fallback
+* SMS
+   * Request URL: {host}/twiml/sms
+   * Fallback URL: {host}/twiml/sms/fallback
+```
+
 ### Configuration
 
 Configuration is done using environment variables:
