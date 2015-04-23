@@ -15,7 +15,12 @@
                     <i class="ion-android-arrow-back secondary"></i>
                     {% endif %}
                 </td>
-                <td>{{ numbers.item(call.from) }}</td>
+                <td>
+                    {{ numbers.item(call.from) }}
+                    {% if call.forwardedFrom %}
+                    <p class="help">Forwarded by {{ numbers.item(call.forwardedFrom) }}</p>
+                    {% endif %}
+                </td>
                 <td>{{ numbers.item(call.to) }}</td>
                 <td>{{ call.startTime|relativeDate }}</td>
                 <td>{{ call.duration }}s</td>
