@@ -8,12 +8,14 @@
             {% for call in calls.list %}
             <tr>
                 <td class="list-icon">
-                    <i class="ion-android-call {% if call.status == "completed" %}text-success{% else %}text-error{% endif %}"></i>
-                    {% if call.direction == "outbound" %}
-                    <i class="ion-android-arrow-forward secondary"></i>
-                    {% else %}
-                    <i class="ion-android-arrow-back secondary"></i>
-                    {% endif %}
+                    <div class="tooltip" title="{{ call.direction|capitalize }} call, {{ call.status|capitalize }}">
+                        <i class="ion-android-call {% if call.status == "completed" %}text-success{% else %}text-error{% endif %}"></i>
+                        {% if call.direction == "outbound" %}
+                        <i class="ion-android-arrow-forward secondary"></i>
+                        {% else %}
+                        <i class="ion-android-arrow-back secondary"></i>
+                        {% endif %}
+                    </div>
                 </td>
                 <td>
                     {{ numbers.item(call.from) }}
