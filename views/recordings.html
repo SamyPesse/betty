@@ -6,12 +6,18 @@
             {% for rc in recordings.list %}
             <tr>
                 <td class="list-icon">
-                    <div class="tooltip">
+                    <div>
                         <i class="ion-ios-recording"></i>
                     </div>
                 </td>
                 <td>{{ rc.createdTime|relativeDate }}</td>
                 <td>{{ rc.duration }}s</td>
+                <td>
+                    <audio controls>
+                        <source src="{{ rc.urls.mp3 }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
             </tr>
             {% endfor %}
         </table>
