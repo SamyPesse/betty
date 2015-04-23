@@ -6,13 +6,37 @@
 {% block body %}
     <div class="panel">
         <table class="list list-usages">
+            <tr>
+                <td class="list-icon">
+                    <i class="ion-android-happy"></i>
+                </td>
+                <td>Receptionist</td>
+                <td>{{ account.profile.name }}</td>
+            </tr>
+            <tr>
+                <td class="list-icon">
+                    <i class="ion-android-cloud-done"></i>
+                </td>
+                <td>Running since</td>
+                <td>{{ account.start|relativeDate }}</td>
+            </tr>
+            <tr>
+                <td class="list-icon">
+                    <i class="ion-android-globe"></i>
+                </td>
+                <td>Language</td>
+                <td>{{ account.profile.language }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="panel">
+        <table class="list list-usages">
             {% for name, usage in account.usages %}
                 {% if usage.label %}
                 <tr>
                     <td class="list-icon">
-                        <div class="tooltip" title="">
-
-                        </div>
+                        <i class="{{ usage.label.icon }}"></i>
                     </td>
                     <td>{{ usage.label.title }}</td>
                     <td>{% if usage.label.unit %}{{ usage.value }} {{ usage.label.unit }}{% endif %}</td>
