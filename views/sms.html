@@ -4,9 +4,9 @@
 {% block title %}Messages{% endblock %}
 
 {% block body %}
+    {% for sms in messages.list %}
     <div class="panel">
         <table class="list list-sms">
-            {% for sms in messages.list %}
             <tr>
                 <td class="list-icon">
                     <div class="tooltip" title="{{ sms.direction|capitalize }} sms, {{ sms.status|capitalize }}">
@@ -20,10 +20,12 @@
                 </td>
                 <td>{{ numbers.item(sms.from) }}</td>
                 <td>{{ numbers.item(sms.to) }}</td>
-                <td>{{ sms.body }}</td>
                 <td>{{ sms.sentTime|relativeDate }}</td>
             </tr>
-            {% endfor %}
+            <tr>
+                <td colspan="4" class="list-alternate">{{ sms.body|replace('\n','<br/>') }}</td>
+            </tr>
         </table>
     </div>
+    {% endfor %}
 {% endblock %}
