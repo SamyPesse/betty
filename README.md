@@ -94,10 +94,7 @@ Configuration is done using environment variables:
 Betty provides a REST API with the same features that the dashboard:
 
 ```
-Get a quick status of Betty:
-GET /api/
-
-Details about your account (balance, usages)
+Details about Betty and your account (balance, usages)
 GET /api/account
 
 List team members:
