@@ -11,13 +11,13 @@
     <body>
         <div class="container">
             <div class="navigation">
-                <a class="tab tab-action {% if tab == "status" %}active{% endif %}" href="/" class="tooltip tooltip-bottom" title="Status">
+                <a class="tab tab-action tooltip tooltip-bottom {% if tab == "status" %}active{% endif %}" href="/" title="Status">
                     <i class="ion-android-home"></i>
                 </a>
-                <a class="tab tab-action" href="/dial" class="tooltip tooltip-bottom" title="Dial">
+                <a class="tab tab-action tooltip tooltip-bottom" href="/dial" title="Dial">
                     <i class="ion-android-apps"></i>
                 </a>
-                <a class="tab tab-action" href="/text" class="tooltip tooltip-bottom" title="Settings">
+                <a class="tab tab-action tooltip tooltip-bottom" href="/text" title="Settings">
                     <i class="ion-android-send"></i>
                 </a>
                 <a class="tab tab-link {% if tab == "calls" %}active{% endif %}" href="/calls">Calls</a>
