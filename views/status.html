@@ -5,6 +5,21 @@
 
 {% block body %}
     <div class="panel">
+        <table class="list list-usages">
+            {% for name, usage in account.usages %}
+                {% if usage.label %}
+                <tr>
+                    <td class="list-icon">
+                        <div class="tooltip" title="">
 
+                        </div>
+                    </td>
+                    <td>{{ usage.label.title }}</td>
+                    <td>{% if usage.label.unit %}{{ usage.value }} {{ usage.label.unit }}{% endif %}</td>
+                    <td>${{ usage.price }}</td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
     </div>
 {% endblock %}
