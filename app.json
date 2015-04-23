@@ -16,6 +16,9 @@
         },
         "TWILIO_TOKEN": {
             "description": "Twilio Token"
+        },
+        "TWILIO_APPID": {
+            "description": "TwiML Application ID"
         }
     }
 }

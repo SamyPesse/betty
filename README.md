@@ -64,7 +64,7 @@ $ export TEAM=Samy:+140145170479,Aaron:+147145670479
 $ node ./betty.js
 ```
 
-Configure your Twilio phone number to use:
+Create a TwiML application with the following urls and associated it to a phone number:
 
 ```
 * Voice
@@ -90,6 +90,7 @@ Configuration is done using environment variables:
 | `TEAM`       | Comma separated list of team members in the format `name:phone`, example `TEAM=Samy:+15674895678,Aaron:+15674995678` |
 | `TWILIO_SID` | API Application SID for Twilio |
 | `TWILIO_TOKEN` | API Application Token for Twilio |
+| `TWILIO_APPID` | SID of your TwiML application |
 
 ### API
 
