@@ -1,15 +1,16 @@
 
 function setupDialDialog() {
     var connection;
+    var inCall = false;
     var $dialog = $('#dialog-dial');
     var $input = $dialog.find('.dial-input');
-    var $status = $dialog.find('dial-status');
+    var $status = $dialog.find('.dial-status');
     var $doHangup = $dialog.find('.do-hangup');
     var $doCall = $dialog.find('.do-call');
 
     var toggleCallStatus = function(){
-        $doCall.toggle();
-        $doHangup.toggle();
+        $doCall.toggle(!inCall);
+        $doHangup.text(inCall? "Hangup" : "Close");
     }
 
 
@@ -27,7 +28,7 @@ function setupDialDialog() {
     Twilio.Device.setup($dialog.find('input[name=token]').val());
 
     $doCall.click(function() {
-        params = { "tocall" : $doCall.val()};
+        params = { "tocall" : $input.val()};
         connection = Twilio.Device.connect(params);
     });
     $doHangup.click(function() {
@@ -35,6 +36,7 @@ function setupDialDialog() {
     });
 
     Twilio.Device.ready(function (device) {
+        console.log("Ready");
         $status.text('Ready to start call');
     });
 
@@ -47,22 +49,30 @@ function setupDialDialog() {
     });
 
     Twilio.Device.offline(function (device) {
+        console.log("Offline");
         $status.text('Offline');
     });
 
     Twilio.Device.error(function (error) {
-        $status.text(error);
+        console.log("Error", error);
+        $status.text("Error: "+error.message.message);
     });
 
     Twilio.Device.connect(function (conn) {
+        console.log("Connected");
         $status.text("Successfully established call");
+        inCall = true;
         toggleCallStatus();
     });
 
     Twilio.Device.disconnect(function (conn) {
-        $status.text("Call ended");
+        console.log("Disconnected");
+        if (inCall) $status.text("Call ended");
+        inCall = false;
         toggleCallStatus();
     });
+
+    toggleCallStatus();
 }
 
 
