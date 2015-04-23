@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="panel">
+        <table class="list list-sms">
+            {% for rc in recordings.list %}
+            <tr>
+                <td class="list-icon">
+                    <div class="tooltip">
+                        <i class="ion-ios-recording"></i>
+                    </div>
+                </td>
+                <td>{{ rc.createdTime|relativeDate }}</td>
+                <td>{{ rc.duration }}s</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

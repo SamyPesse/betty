@@ -19,6 +19,7 @@
                 <td>{{ numbers.item(sms.from) }}</td>
                 <td>{{ numbers.item(sms.to) }}</td>
                 <td>{{ sms.body }}</td>
+                <td>{{ sms.sentTime|relativeDate }}</td>
             </tr>
             {% endfor %}
         </table>
