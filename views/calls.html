@@ -7,7 +7,7 @@
             <tr>
                 <td>
                     <div class="list-icon">
-                        <i class="ion-android-call"></i>
+                        <i class="ion-android-call {% if call.status == "completed" %}text-success{% else %}text-error{% endif %}"></i>
                         {% if call.direction == "inbound" %}
                         <i class="ion-android-arrow-forward secondary"></i>
                         {% else %}
@@ -15,8 +15,8 @@
                         {% endif %}
                     </div>
                 </td>
-                <td>{{ call.from.phone }}</td>
-                <td>{{ call.to.phone }}</td>
+                <td><a href="tel:{{ call.from.phone }}">{{ call.from.phone }}</a></td>
+                <td><a href="tel:{{ call.to.phone }}">{{ call.to.phone }}</a></td>
                 <td>{{ call.startTime|relativeDate }}</td>
                 <td>{{ call.duration }}s</td>
             </tr>

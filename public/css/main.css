@@ -133,6 +133,14 @@ a img {
   border-bottom: 1px solid #ececec;
   vertical-align: middle;
 }
+.list tr td a {
+  text-decoration: none;
+  color: inherit;
+}
+.list tr td a:focus,
+.list tr td a:hover {
+  text-decoration: underline;
+}
 .list tr td .list-icon {
   font-size: 24px;
   text-align: center;
@@ -166,6 +174,10 @@ a img {
 .navigation .tab.active {
   border-bottom-color: #0288d1;
 }
+.navigation .action {
+  padding: 10px;
+  float: right;
+}
 * {
   box-sizing: border-box;
 }
@@ -182,4 +194,10 @@ body {
   max-width: 800px;
   width: 100%;
   margin: 0px auto;
+}
+.text-success {
+  color: #5cb85c;
+}
+.text-error {
+  color: #d9534f;
 }
