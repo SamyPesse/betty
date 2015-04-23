@@ -1,9 +1,7 @@
 {% macro item(num) %}
     {% if num.member %}
-    <a href="tel:{{ num.phone }}">
         <i class="ion-android-contact"></i>
-        {{ num.member.name }}
-    </a>
+        <a href="tel:{{ num.phone }}" class="tooltip" title="{{ num.phone }}">{{ num.member.name }}</a>
     {% else %}
     <a href="tel:{{ num.phone }}">{{ num.phone }}</a>
     {% endif %}
