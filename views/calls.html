@@ -1,22 +1,22 @@
 {% extends "layout.html" %}
+{% import "macros/numbers.html" as numbers %}
+
 
 {% block body %}
     <div class="panel">
         <table class="list list-calls">
             {% for call in calls.list %}
             <tr>
-                <td>
-                    <div class="list-icon">
-                        <i class="ion-android-call {% if call.status == "completed" %}text-success{% else %}text-error{% endif %}"></i>
-                        {% if call.direction == "inbound" %}
-                        <i class="ion-android-arrow-forward secondary"></i>
-                        {% else %}
-                        <i class="ion-android-arrow-back secondary"></i>
-                        {% endif %}
-                    </div>
+                <td class="list-icon">
+                    <i class="ion-android-call {% if call.status == "completed" %}text-success{% else %}text-error{% endif %}"></i>
+                    {% if call.direction == "outbound" %}
+                    <i class="ion-android-arrow-forward secondary"></i>
+                    {% else %}
+                    <i class="ion-android-arrow-back secondary"></i>
+                    {% endif %}
                 </td>
-                <td><a href="tel:{{ call.from.phone }}">{{ call.from.phone }}</a></td>
-                <td><a href="tel:{{ call.to.phone }}">{{ call.to.phone }}</a></td>
+                <td>{{ numbers.item(call.from) }}</td>
+                <td>{{ numbers.item(call.to) }}</td>
                 <td>{{ call.startTime|relativeDate }}</td>
                 <td>{{ call.duration }}s</td>
             </tr>

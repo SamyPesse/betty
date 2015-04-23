@@ -132,6 +132,7 @@ a img {
   padding: 14px 10px;
   border-bottom: 1px solid #ececec;
   vertical-align: middle;
+  line-height: 24px;
 }
 .list tr td a {
   text-decoration: none;
@@ -141,11 +142,14 @@ a img {
 .list tr td a:hover {
   text-decoration: underline;
 }
-.list tr td .list-icon {
-  font-size: 24px;
+.list tr td.list-icon {
   text-align: center;
 }
-.list tr td .list-icon .secondary {
+.list tr td i {
+  font-size: 24px;
+  display: inline-block;
+}
+.list tr td i.secondary {
   font-size: 14px;
 }
 .panel {
