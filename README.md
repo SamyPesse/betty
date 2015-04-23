@@ -105,4 +105,10 @@ GET /api/calls
 
 Details about a specific call:
 GET /api/calls/<id>
+
+List SMS
+GET /api/sms
+
+List Recordings
+GET /api/recordings
 ```
