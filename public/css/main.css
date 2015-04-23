@@ -155,6 +155,17 @@ a img {
 .list tr td .help {
   color: #aaa;
 }
+.list tr td.list-actions {
+  text-align: center;
+}
+.list tr td.list-actions a {
+  display: inline-block;
+  padding: 0px 8px;
+  color: #aaa;
+}
+.list tr td.list-actions a:hover {
+  color: #555;
+}
 .panel {
   margin: 20px 0px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);

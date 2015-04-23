@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% import "macros/numbers.html" as numbers %}
 
 {% block title %}Team{% endblock %}
 
@@ -18,6 +19,14 @@
                 </td>
                 <td>{{ user.name }}</td>
                 <td>{{ user.phone }}</td>
+                <td class="list-actions">
+                    <a href="{{ numbers.callUrl(user.phone) }}">
+                        <i class="ion-android-call"></i>
+                    </a>
+                    <a href="/{{ numbers.smsUrl(user.phone) }}">
+                        <i class="ion-android-textsms"></i>
+                    </a>
+                </td>
             </tr>
             {% endfor %}
         </table>
