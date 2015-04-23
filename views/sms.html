@@ -1,18 +1,24 @@
 {% extends "layout.html" %}
+{% import "macros/numbers.html" as numbers %}
 
 {% block body %}
     <div class="panel">
         <table class="list list-sms">
-            {% for mesg in messages.list %}
+            {% for sms in messages.list %}
             <tr>
-                <td>
-                    <div class="list-icon">
-                        <i class="ion-android-textsms"></i>
+                <td class="list-icon">
+                    <div class="tooltip" title="{{ sms.direction|capitalize }} sms, {{ sms.status|capitalize }}">
+                        <i class="ion-android-textsms {% if sms.status == "delivered" %}text-success{% else %}text-error{% endif %}"></i>
+                        {% if sms.direction == "outbound" %}
+                        <i class="ion-android-arrow-forward secondary"></i>
+                        {% else %}
+                        <i class="ion-android-arrow-back secondary"></i>
+                        {% endif %}
                     </div>
                 </td>
-                <td>{{ msg.from.phone }}</td>
-                <td>{{ msg.to.phone }}</td>
-                <td>{{ msg.body }}</td>
+                <td>{{ numbers.item(sms.from) }}</td>
+                <td>{{ numbers.item(sms.to) }}</td>
+                <td>{{ sms.body }}</td>
             </tr>
             {% endfor %}
         </table>
