@@ -27,7 +27,7 @@ function setupDialDialog() {
     Twilio.Device.setup($dialog.find('input[name=token]').val());
 
     $doCall.click(function() {
-        params = { "Digits" : $doCall.val()};
+        params = { "tocall" : $doCall.val()};
         connection = Twilio.Device.connect(params);
     });
     $doHangup.click(function() {
