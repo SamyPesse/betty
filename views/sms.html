@@ -23,9 +23,17 @@
                 <td>{{ sms.sentTime|relativeDate }}</td>
             </tr>
             <tr>
-                <td colspan="4" class="list-alternate">{{ sms.body|replace('\n','<br/>') }}</td>
+                <td colspan="5" class="list-alternate">{{ sms.body|replace('\n','<br/>') }}</td>
             </tr>
         </table>
     </div>
     {% endfor %}
+{% endblock %}
+
+{% block script %}
+<script>
+$(document).ready(function() {
+
+});
+</script>
 {% endblock %}

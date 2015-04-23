@@ -14,10 +14,10 @@
                 <a class="tab tab-action tooltip tooltip-bottom {% if tab == "status" %}active{% endif %}" href="/" title="Status">
                     <i class="ion-android-home"></i>
                 </a>
-                <a class="tab tab-action tooltip tooltip-bottom" href="/dial" title="Dial">
+                <a class="tab tab-action tooltip tooltip-bottom" href="#" data-dialog="dial" title="Dial">
                     <i class="ion-android-apps"></i>
                 </a>
-                <a class="tab tab-action tooltip tooltip-bottom" href="/text" title="New Message">
+                <a class="tab tab-action tooltip tooltip-bottom" href="#" data-dialog="sms" title="New Message">
                     <i class="ion-android-send"></i>
                 </a>
                 <a class="tab tab-link {% if tab == "calls" %}active{% endif %}" href="/calls">Calls</a>
@@ -27,5 +27,12 @@
             </div>
             {% block body %}{% endblock %}
         </div>
+
+        {% include "dialogs/sms.html" %}
+        {% include "dialogs/dial.html" %}
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="/public/js/main.js"></script>
+        {% block script %}{% endblock %}
     </body>
 </html>
