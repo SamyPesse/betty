@@ -1,29 +1,43 @@
 .navigation {
-    display: table;
+    display: flex;
     width: 100%;
-    table-layout: fixed;
-    border-collapse: separate;
+    flex-direction: row;
+    align-items: stretch;
 
     .tab {
-        display: table-cell;
-        float: none;
-        width: 1%;
-        padding: 10px;
         border-bottom: 4px solid transparent;
         text-align: center;
         text-transform: uppercase;
         font-size: 1rem;
         text-decoration: none;
-        color: #999;
-        font-weight: 300;
+
 
         &.active {
-            border-bottom-color: #0288d1;
+            border-bottom-color: @color-blue;
         }
-    }
 
-    .action {
-        padding: 10px;
-        float: right;
+        &.tab-link {
+            color: #999;
+            font-weight: 300;
+            padding: 14px;
+            flex-grow: 2;
+        }
+
+        &.tab-action {
+            font-size: 24px;
+            color: inherit;
+            text-decoration: none;
+            padding: 0px 14px;
+            line-height: 50px;
+            color: #999;
+
+            i {
+                display: inline-block;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 }

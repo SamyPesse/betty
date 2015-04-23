@@ -11,10 +11,19 @@
     <body>
         <div class="container">
             <div class="navigation">
-                <a class="tab {% if tab == "calls" %}active{% endif %}" href="/calls">Calls</a>
-                <a class="tab {% if tab == "sms" %}active{% endif %}" href="/sms">Messages</a>
-                <a class="tab {% if tab == "recordings" %}active{% endif %}" href="/recordings">Voicemail</a>
-                <a class="tab {% if tab == "team" %}active{% endif %}" href="/team">Team</a>
+                <a class="tab tab-action {% if tab == "status" %}active{% endif %}" href="/" class="tooltip tooltip-bottom" title="Status">
+                    <i class="ion-android-home"></i>
+                </a>
+                <a class="tab tab-action" href="/dial" class="tooltip tooltip-bottom" title="Dial">
+                    <i class="ion-android-apps"></i>
+                </a>
+                <a class="tab tab-action" href="/text" class="tooltip tooltip-bottom" title="Settings">
+                    <i class="ion-android-send"></i>
+                </a>
+                <a class="tab tab-link {% if tab == "calls" %}active{% endif %}" href="/calls">Calls</a>
+                <a class="tab tab-link {% if tab == "sms" %}active{% endif %}" href="/sms">Messages</a>
+                <a class="tab tab-link {% if tab == "recordings" %}active{% endif %}" href="/recordings">Voicemail</a>
+                <a class="tab tab-link {% if tab == "team" %}active{% endif %}" href="/team">Team</a>
             </div>
             {% block body %}{% endblock %}
         </div>
