@@ -1,7 +1,7 @@
 {
     "name": "betty",
     "version": "0.0.0",
-    "description": "Virtual and customizable receptionist built on top of Twilio",
+    "description": "Open source Google Voice with Receptionist abilities",
     "homepage": "https://github.com/SamyPesse/betty",
     "license": "Apache-2.0",
     "main": "./lib/index.js",

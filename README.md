@@ -1,5 +1,7 @@
 ![Betty](https://github.com/SamyPesse/betty/blob/master/public/images/betty.png?raw=true)
 
+> Open source Google Voice with Receptionist abilities
+
 Betty (or Ben for the ones who prefer a male receiptionist) is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your organization is operating in the US but based in another countries.
 
 Betty is easy to setup and build on top of Twilio and Node.js, it doesn't necessitate a database (stateless). It can be deployed to Heroku or any unix server.

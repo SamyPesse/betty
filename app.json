@@ -1,6 +1,6 @@
 {
     "name": "Betty",
-    "description": "Virtual and customizable receptionist built on top of Twilio",
+    "description": "Open source Google Voice with Receptionist abilities",
     "repository": "https://github.com/SamyPesse/betty",
     "logo": "https://node-js-sample.herokuapp.com/node.svg",
     "keywords": ["receiptionist", "phone", "sms", "betty", "twilio"],
