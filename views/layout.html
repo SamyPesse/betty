@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ profile.name }}</title>
+        <title>{% block title %}Welcome{% endblock %} - {{ profile.name }}</title>
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
         <link href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="/public/css/main.css">
+        <link rel="icon" type="image/png" href="/public/images/icon.png">
     </head>
     <body>
         <div class="container">
