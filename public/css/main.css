@@ -260,6 +260,7 @@ a img {
   left: 0px;
   background: rgba(0, 0, 0, 0.7);
   display: none;
+  overflow: auto;
 }
 .dialog-container.active {
   display: block;
@@ -292,36 +293,49 @@ a img {
   align-items: stretch;
 }
 .dialog-container .dialog .dialog-controls button {
-  padding: 15px;
-  background: #fff;
-  border: 0px;
-  border-radius: 0px;
   flex-grow: 2;
-  cursor: pointer;
 }
-.form .form-control {
+.form-control {
   width: 100%;
   margin-bottom: 10px;
   padding: 8px;
   font-size: 1.1rem;
   border: 1px solid #ddd;
 }
-.form .dialpad {
-  margin-left: -6px;
-  margin-right: -6px;
-}
-.form .dialpad table {
-  width: 100%;
-  border-spacing: 6px;
-}
-.form .dialpad table input {
-  width: 100%;
-  padding: 15px;
+button,
+.button {
   background: #fff;
   border-radius: 0px;
   border: 1px solid #eee;
   font-size: 16px;
   cursor: pointer;
+  color: #222;
+  padding: 14px;
+}
+button:hover,
+.button:hover {
+  color: #000;
+}
+.dialpad {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.dialpad table {
+  width: 100%;
+  border-spacing: 6px;
+}
+.dialpad table input {
+  width: 100%;
+  background: #fff;
+  border-radius: 0px;
+  border: 1px solid #eee;
+  font-size: 16px;
+  cursor: pointer;
+  color: #222;
+  padding: 14px;
+}
+.dialpad table input:hover {
+  color: #000;
 }
 * {
   box-sizing: border-box;
