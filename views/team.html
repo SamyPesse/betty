@@ -7,7 +7,11 @@
             <tr>
                 <td>
                     <div class="list-icon">
+                        {% if user.machine %}
+                        <i class="ion-android-home"></i>
+                        {% else %}
                         <i class="ion-android-contact"></i>
+                        {% endif %}
                     </div>
                 </td>
                 <td>{{ user.name }}</td>
