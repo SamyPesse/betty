@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% import "macros/audio.html" as audio %}
 
 {% block title %}Recordings{% endblock %}
 
@@ -15,10 +16,7 @@
                 <td>{{ rc.createdTime|relativeDate }}</td>
                 <td>{{ rc.duration }}s</td>
                 <td>
-                    <audio controls>
-                        <source src="{{ rc.urls.mp3 }}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                    {{ audio.player(rc.urls.mp3) }}
                 </td>
             </tr>
             {% endfor %}

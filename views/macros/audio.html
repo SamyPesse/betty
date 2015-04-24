@@ -1,0 +1,14 @@
+{% macro player(src) %}
+<div class="audio-player">
+    <div class="audio-inner">
+        <button class="do-play"><i class="ion-play"></i></button>
+        <button class="do-pause"><i class="ion-pause"></i></button>
+        <button class="do-stop"><i class="ion-stop"></i></button>
+        <div class="position">0:0</div>
+        <audio>
+            <source src="{{ src }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+{% endmacro %}

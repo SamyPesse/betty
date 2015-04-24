@@ -337,6 +337,44 @@ button:hover,
 .dialpad table input:hover {
   color: #000;
 }
+.audio-player {
+  background: #eee;
+  width: 300px;
+  overflow: hidden;
+}
+.audio-player .audio-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.audio-player button {
+  padding: 4px 14px;
+  flex-grow: 1;
+}
+.audio-player .position {
+  flex-grow: 2;
+  padding: 0px 10px;
+  line-height: 38px;
+  font-size: 16px;
+}
+.audio-player .do-pause,
+.audio-player .do-stop {
+  display: none;
+}
+.audio-player.playing .do-pause,
+.audio-player.playing .do-stop {
+  display: block;
+}
+.audio-player.playing .do-play {
+  display: none;
+}
+.audio-player.paused .do-play,
+.audio-player.paused .do-stop {
+  display: block;
+}
+.audio-player.paused .do-pause {
+  display: hidden;
+}
 * {
   box-sizing: border-box;
 }

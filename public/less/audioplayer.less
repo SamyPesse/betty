@@ -1,0 +1,44 @@
+.audio-player {
+    background: #eee;
+    width: 300px;
+    overflow: hidden;
+
+    .audio-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    button {
+        padding: 4px 14px;
+        flex-grow: 1;
+    }
+
+    .position {
+        flex-grow: 2;
+        padding: 0px 10px;
+        line-height: 38px;
+        font-size: 16px;
+    }
+
+    .do-pause, .do-stop {
+        display: none;
+    }
+
+    &.playing {
+        .do-pause, .do-stop {
+            display: block;
+        }
+        .do-play {
+            display: none;
+        }
+    }
+    &.paused {
+        .do-play, .do-stop {
+            display: block;
+        }
+        .do-pause {
+            display: hidden;
+        }
+    }
+}
