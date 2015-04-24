@@ -11,7 +11,7 @@
             <tr>
                 <td class="list-icon">
                     <div class="tooltip" title="{{ sms.direction|capitalize }} sms, {{ sms.status|capitalize }}">
-                        <i class="ion-android-textsms {% if sms.status == "delivered" %}text-success{% else %}text-error{% endif %}"></i>
+                        <i class="ion-android-textsms {% if sms.status == "delivered" or sms.status == "received" %}text-success{% else %}text-error{% endif %}"></i>
                         {% if sms.direction == "outbound" %}
                         <i class="ion-android-arrow-forward secondary"></i>
                         {% else %}
