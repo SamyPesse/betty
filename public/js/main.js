@@ -83,6 +83,10 @@ function setupDialogs() {
 
         $('#dialog-'+dialog).toggleClass('active');
     });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) $('.dialog-container').removeClass('active');
+    });
 }
 
 // Setup audio player
