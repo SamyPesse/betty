@@ -20,9 +20,8 @@ function setupDialDialog() {
 
         if (connection) {
             connection.sendDigits(value);
-        } else {
-            $input.val($dialInput.val()+value);
         }
+        $input.val($input.val()+value);
     });
 
     Twilio.Device.setup($dialog.find('input[name=token]').val());
