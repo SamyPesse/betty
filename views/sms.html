@@ -22,6 +22,11 @@
                 <td>{{ numbers.item(sms.from) }}</td>
                 <td>{{ numbers.item(sms.to) }}</td>
                 <td>{{ sms.sentTime|relativeDate }}</td>
+                <td class="list-actions">
+                    <a href="{{ numbers.smsUrl(sms.from.phone) }}">
+                        <i class="ion-android-send"></i>
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td colspan="5" class="list-alternate">{{ sms.body|replace('\n','<br/>') }}</td>
