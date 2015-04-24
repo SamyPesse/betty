@@ -32,6 +32,10 @@ This also works for text messages, simply text Betty with somthing like `Please 
 
 A team member can also contact Betty to get access to th organization directory (by phone call or sms), example: just text Betty with: `What is Aaron's phone number?`.
 
+##### Let you manager everything from your browser
+
+Betty is providing a nice dashboard to manage calls, messages and voicemail. You can pass calls and send sms right from your browser.
+
 ### The Receptionists Team
 
 ![Team](https://github.com/SamyPesse/betty/blob/master/public/images/team.png?raw=true)
