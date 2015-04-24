@@ -2,7 +2,7 @@
 
 > Open source Google Voice with Receptionist abilities
 
-Betty (or Ben for the ones who prefer a male receiptionist) is your own cutomizable receptionist, to forward call and messages to your team anywhere in the world. It's particulary usefull if your organization is operating in the US but based in another countries.
+Betty (or Ben for the ones who prefer a male receptionist) is your own customizable receptionist, to forward call and messages to your team anywhere in the world. It's particularly useful if your organization is operating in the US, but based in another countries.
 
 Betty is easy to setup and build on top of Twilio and Node.js, it doesn't necessitate a database (stateless). It can be deployed to Heroku or any unix server.
 
@@ -10,37 +10,37 @@ Betty is easy to setup and build on top of Twilio and Node.js, it doesn't necess
 
 ### What Betty can do?
 
-##### One phone number for your all your organization
+##### One phone number for all your organization
 
 Betty is running on top of one or more phone numbers that represent your organization.
 
 ##### Forward call to available team members
 
-When calling this number, Betty will forward the call to an available team member.
+When receiving a call, Betty will forward it to an available team member.
 
 ##### Forward text messages to team members
 
-When receiving an SMS, Betty will forward it to all your team members, first team member to answer will start a session with this caller.
+Like calls, when receiving an SMS, Betty will forward it to all of your team members, the first one to answer will start a session with this caller.
 
-##### Makes it easy for your employee to pass phone calls from the company
+##### Makes it easy for your employee to pass phone calls from the organization
 
-When a team member is contacting Betty, he/she can ask to start a call, Betty will dial the number and forward the call to you.
+When a team member is calling Betty, he/she can ask to be put in touch with a specific number, Betty will dial the number and forward the call to you.
 
-This also works for text messages, simply text Betty with somthing like `Please call +140145170479 for me` or `Text +140145170479`.
+This also works for text messages, simply text Betty with `Call +140145170479` or `Text +140145170479`.
 
-##### Phone or SMS accessible directory for your team member
+##### Phone directory for your team members
 
-A team member can also contact Betty to get access to th organization directory (by phone call or sms), example: just text Betty with: `What is Aaron's phone number?`.
+A team member can also contact Betty to get access to the organization directory (using phone call or sms). For example, just text Betty with: `What is Aaron's phone number?`.
 
-##### Let you manager everything from your browser
+##### Let you do everything right from your web-browser
 
-Betty is providing a nice dashboard to manage calls, messages and voicemail. You can pass calls and send sms right from your browser.
+Betty is providing a nice dashboard to manage calls, messages and voicemail. You can pass calls and send SMS right from your browser.
 
 ### The Receptionists Team
 
 ![Team](https://github.com/SamyPesse/betty/blob/master/public/images/team.png?raw=true)
 
-Betty can be configured to use another profile (voice, language, sentencesm etc.). Change your receiptionist by changing the `PROFILE` environment variable (see below).
+Betty can be configured to use another profile (voice, language, sentences, etc.). Change your receptionist by changing the `PROFILE` environment variable (see below).
 
 | ID          | Name | Voice | Language | Personality |
 | ----------- | ---- | ----- | -------- | ----------- |
@@ -50,7 +50,7 @@ Betty can be configured to use another profile (voice, language, sentencesm etc.
 
 ### Deployment
 
-Deploy Betty to your own machine using:
+Deploy Betty on your own machine using:
 
 ```
 # Clone Betty locally
@@ -68,7 +68,7 @@ $ export TEAM=Samy:+140145170479,Aaron:+147145670479
 $ node ./betty.js
 ```
 
-Create a TwiML application with the following urls and associated it to a phone number:
+[Create a TwiML application](https://www.twilio.com/help/faq/twilio-client/how-do-i-create-a-twiml-app) with the following urls and associated it to a phone number:
 
 ```
 * Voice
@@ -81,7 +81,7 @@ Create a TwiML application with the following urls and associated it to a phone 
 
 ### Configuration
 
-Configuration is done using environment variables:
+Configuration is set using environment variables:
 
 | Name         | Description         |
 | ------------ | ------------------- |
