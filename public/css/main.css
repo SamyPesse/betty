@@ -124,6 +124,20 @@ a img {
 :focus {
   outline: 0;
 }
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
 .list {
   width: 100%;
   background: #fff;
@@ -311,6 +325,7 @@ button,
   cursor: pointer;
   color: #222;
   padding: 14px;
+  text-decoration: none;
 }
 button:hover,
 .button:hover {
@@ -333,6 +348,7 @@ button:hover,
   cursor: pointer;
   color: #222;
   padding: 14px;
+  text-decoration: none;
 }
 .dialpad table input:hover {
   color: #000;
@@ -374,6 +390,23 @@ button:hover,
 }
 .audio-player.paused .do-pause {
   display: hidden;
+}
+.pagination {
+  zoom: 1;
+}
+.pagination:before,
+.pagination:after {
+  content: "";
+  display: table;
+}
+.pagination:after {
+  clear: both;
+}
+.pagination .next {
+  float: right;
+}
+.pagination .previous {
+  float: left;
 }
 * {
   box-sizing: border-box;

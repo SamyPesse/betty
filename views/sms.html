@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% import "macros/pagination.html" as pagination %}
 {% import "macros/numbers.html" as numbers %}
 
 {% block title %}Messages{% endblock %}
@@ -28,12 +29,5 @@
         </table>
     </div>
     {% endfor %}
-{% endblock %}
-
-{% block script %}
-<script>
-$(document).ready(function() {
-
-});
-</script>
+    {{ pagination.nav(messages) }}
 {% endblock %}

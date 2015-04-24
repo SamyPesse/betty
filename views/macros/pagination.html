@@ -1,0 +1,14 @@
+{% macro nav(list) %}
+<div class="pagination">
+    {% if list.pages.previous %}
+    <a class="button previous" href="?pagetoken={{ list.pages.previous.pagetoken }}&amp;page={{ list.pages.previous.page }}">
+        <i class="ion-ios-arrow-left"></i> Previous
+    </a>
+    {% endif %}
+    {% if list.pages.next %}
+    <a class="button next" href="?pagetoken={{ list.pages.next.pagetoken }}&amp;page={{ list.pages.next.page }}">
+        Next <i class="ion-ios-arrow-right"></i>
+    </a>
+    {% endif %}
+</div>
+{% endmacro %}

@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% import "macros/pagination.html" as pagination %}
 {% import "macros/audio.html" as audio %}
 
 {% block title %}Recordings{% endblock %}
@@ -22,4 +23,5 @@
             {% endfor %}
         </table>
     </div>
+    {{ pagination.nav(recordings) }}
 {% endblock %}
