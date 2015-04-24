@@ -1,13 +1,13 @@
 <div id="dialog-sms" class="dialog-container">
     <div class="dialog">
-        <form class="form">
+        <form action="/sms" method="POST" class="form">
             <div class="dialog-inner">
                 <div class="dialog-intro">
                     <h1>New Text Message</h1>
                     <p>Please enter a phone number and your message.</p>
                 </div>
-                <input type="tel" class="form-control"placeholder="Enter a phone number" />
-                <textarea rows="4" class="form-control"></textarea>
+                <input name="to" type="tel" class="form-control"placeholder="Enter a phone number" />
+                <textarea name="body" rows="4" class="form-control"></textarea>
             </div>
             <div class="dialog-controls">
                 <button type="submit">Send</button>
