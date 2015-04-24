@@ -1,5 +1,5 @@
 {% macro callUrl(num) %}tel:{{ num|urlencode }}{% endmacro %}
-{% macro smsUrl(num) %}tel:{{ num|urlencode }}{% endmacro %}
+{% macro smsUrl(num) %}sms:{{ num|urlencode }}{% endmacro %}
 
 {% macro item(num) %}
     {% if num.member %}
