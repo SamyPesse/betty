@@ -6,7 +6,7 @@ Betty (or Ben for the ones who prefer a male receptionist) is your own customiza
 
 Betty is easy to setup and build on top of Twilio and Node.js, it doesn't necessitate a database (stateless). It can be deployed to Heroku or any unix server.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy) ![NPM version](https://badge.fury.io/js/betty-cli.svg)
 
 ### What Betty can do?
 
