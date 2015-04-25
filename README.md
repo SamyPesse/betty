@@ -6,7 +6,7 @@ Betty (or Ben for the ones who prefer a male receptionist) is your own customiza
 
 Betty is easy to setup and build on top of Twilio and Node.js, it doesn't necessitate a database (stateless). It can be deployed to Heroku or any unix server.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy) ![NPM version](https://badge.fury.io/js/betty-cli.svg)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ### What Betty can do?
 
@@ -32,9 +32,11 @@ This also works for text messages, simply text Betty with `Call +140145170479` o
 
 A team member can also contact Betty to get access to the organization directory (using phone call or sms). For example, just text Betty with: `What is Aaron's phone number?`.
 
-##### Let you do everything right from your web-browser
+### Web Dashboard
 
 Betty is providing a nice dashboard to manage calls, messages and voicemail. You can pass calls and send SMS right from your browser.
+
+![Dashboard](https://github.com/SamyPesse/betty/blob/master/public/images/preview.png?raw=true)
 
 ### The Receptionists Team
 
