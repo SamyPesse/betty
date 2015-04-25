@@ -2,11 +2,16 @@
     "name": "Betty",
     "description": "Open source Google Voice with Receptionist abilities",
     "repository": "https://github.com/SamyPesse/betty",
-    "logo": "https://node-js-sample.herokuapp.com/node.svg",
+    "website": "https://github.com/SamyPesse/betty",
     "keywords": ["receiptionist", "phone", "sms", "betty", "twilio"],
     "env": {
         "HOST": {
             "description": "Hostanem where Betty will be running"
+        },
+        "SECRET": {
+            "description": "Secret token for web authentication",
+            "generator": "secret",
+            "required": false
         },
         "TEAM": {
             "description": "List of members separated by commas in format: name:phone"
@@ -19,6 +24,12 @@
         },
         "TWILIO_APPID": {
             "description": "TwiML Application ID"
+        },
+        "PROFILE": {
+            "description": "Receptionist Profile"
+        },
+        "PHONES": {
+            "description": "Phone number to use (separated by commas)"
         }
     }
 }

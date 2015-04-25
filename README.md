@@ -92,7 +92,7 @@ Configuration is set using environment variables:
 | `TWILIO_TOKEN` | API Application Token for Twilio |
 | `TWILIO_APPID` | SID of your TwiML application |
 
-### API
+### REST API
 
 Betty provides a REST API with the same features that the dashboard:
 
