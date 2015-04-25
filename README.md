@@ -42,11 +42,11 @@ Betty is providing a nice dashboard to manage calls, messages and voicemail. You
 
 Betty can be configured to use another profile (voice, language, sentences, etc.). Change your receptionist by changing the `PROFILE` environment variable (see below).
 
-| ID          | Name | Voice | Language | Personality |
-| ----------- | ---- | ----- | -------- | ----------- |
-| `betty`     | Betty | woman (alice) | `en-us` | Friendly and welcoming young woman |
-| `ben`       | Ben | man | `en-us` | Official and efficient reciptionist |
-| `catherine` | Catherine | woman (alice) | `fr-fr` | Classy french woman |
+| ID          | Name | Voice | Language |
+| ----------- | ---- | ----- | -------- |
+| `betty`     | Betty | woman (alice) | `en-us` |
+| `ben`       | Ben | man | `en-us` |
+| `catherine` | Catherine | woman (alice) |
 
 ### Deployment
 
