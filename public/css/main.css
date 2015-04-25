@@ -188,9 +188,19 @@ a img {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 .navigation {
-  display: flex;
   width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
   align-items: stretch;
 }
 .navigation .tab {
@@ -207,6 +217,9 @@ a img {
   color: #999;
   font-weight: 300;
   padding: 14px;
+  -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  -ms-flex-grow: 2;
   flex-grow: 2;
 }
 .navigation .tab.tab-action {
@@ -301,12 +314,25 @@ a img {
   color: #666;
 }
 .dialog-container .dialog .dialog-controls {
-  display: flex;
   width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
   align-items: stretch;
 }
 .dialog-container .dialog .dialog-controls button {
+  -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  -ms-flex-grow: 2;
   flex-grow: 2;
 }
 .form-control {
@@ -359,15 +385,31 @@ button:hover,
   overflow: hidden;
 }
 .audio-player .audio-inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
   align-items: stretch;
 }
 .audio-player button {
   padding: 4px 14px;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
   flex-grow: 1;
 }
 .audio-player .position {
+  -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  -ms-flex-grow: 2;
   flex-grow: 2;
   padding: 0px 10px;
   line-height: 38px;

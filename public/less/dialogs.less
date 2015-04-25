@@ -41,13 +41,13 @@
         }
 
         .dialog-controls {
-            display: flex;
             width: 100%;
-            flex-direction: row;
-            align-items: stretch;
+            .flex-display(flex);
+            .flex-direction(row);
+            .align-items(stretch);
 
             button {
-                flex-grow: 2;
+                .flex-grow(2);
             }
         }
     }
