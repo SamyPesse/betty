@@ -53,19 +53,15 @@ Betty can be configured to use another profile (voice, language, sentences, etc.
 Deploy Betty on your own machine using:
 
 ```
-# Clone Betty locally
-$ git clone https://github.com/SamyPesse/betty.git
-$ cd betty
-
-# Install dependencies
-$ npm i
+# Install Betty using NPM
+$ npm install betty-cli -g
 
 # Configure it
 $ export TEAM=Samy:+140145170479,Aaron:+147145670479
 ...
 
 # And finally start it
-$ node ./betty.js
+$ betty
 ```
 
 [Create a TwiML application](https://www.twilio.com/help/faq/twilio-client/how-do-i-create-a-twiml-app) with the following urls and associated it to a phone number:

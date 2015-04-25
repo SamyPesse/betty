@@ -1,5 +1,5 @@
 {
-    "name": "betty",
+    "name": "betty-cli",
     "version": "0.0.0",
     "description": "Open source Google Voice with Receptionist abilities",
     "homepage": "https://github.com/SamyPesse/betty",
@@ -38,6 +38,9 @@
             "email": "samypesse@gmail.com"
         }
     ],
+    "bin": {
+        "betty": "./betty.js"
+    },
     "repository": {
         "type" : "git",
         "url" : "https://github.com/SamyPesse/betty.git"
