@@ -48,7 +48,7 @@ Betty can be configured to use another profile (voice, language, sentences, etc.
 | ----------- | ---- | ----- | -------- |
 | `betty`     | Betty | woman (alice) | `en-us` |
 | `ben`       | Ben | man | `en-us` |
-| `catherine` | Catherine | woman (alice) |
+| `catherine` | Catherine | woman (alice) | `fr` |
 
 ### Deployment
 
