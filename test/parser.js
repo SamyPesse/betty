@@ -24,4 +24,19 @@ describe('Messages Parser', function() {
         expect(r.phone).to.equal("+140145170479");
     });
 
+    it('should correctly parse a text action', function() {
+        var r = parser.parse("betty: Text +140145170479");
+
+        expect(r).to.be.ok;
+        expect(r.type).to.equal("text");
+        expect(r.phone).to.equal("+140145170479");
+    });
+
+    it('should correctly parse a stop action', function() {
+        var r = parser.parse("betty: Stop this conversation");
+
+        expect(r).to.be.ok;
+        expect(r.type).to.equal("stop");
+    });
+
 });
