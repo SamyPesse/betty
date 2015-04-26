@@ -1,0 +1,65 @@
+2015-04-25T19:39:28.511584+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-04-25T19:39:28.512575+00:00 app[web.1]: ::ffff:10.38.37.187 - - [25/Apr/2015:19:39:28 +0000] "GET /apple-touch-icon.png HTTP/1.1" 404 32 "-" "com.apple.WebKit.WebContent/10600.5.17 CFNetwork/720.3.13 Darwin/14.3.0 (x86_64)"
+2015-04-25T19:39:28.511579+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:82:5)
+2015-04-25T19:39:28.511581+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:302:13)
+2015-04-25T19:52:59.321223+00:00 app[web.1]: ::ffff:10.165.93.232 - - [25/Apr/2015:19:52:59 +0000] "GET / HTTP/1.1" 401 12 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17"
+2015-04-25T19:53:00.603661+00:00 app[web.1]: ::ffff:10.169.223.123 - Samy [25/Apr/2015:19:53:00 +0000] "GET / HTTP/1.1" 200 7990 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17"
+2015-04-25T19:53:00.819411+00:00 app[web.1]: ::ffff:10.182.88.156 - Samy [25/Apr/2015:19:53:00 +0000] "GET /public/js/main.js HTTP/1.1" 304 - "http://betty.gitbook.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17"
+2015-04-25T19:53:00.780908+00:00 app[web.1]: ::ffff:10.169.223.123 - Samy [25/Apr/2015:19:53:00 +0000] "GET /public/css/main.css HTTP/1.1" 304 - "http://betty.gitbook.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17"
+2015-04-25T20:02:23.124891+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-04-25T20:02:23.124909+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-04-25T20:02:24.450993+00:00 app[web.1]: Sat, 25 Apr 2015 20:02:24 GMT body-parser deprecated undefined extended: provide extended option at lib/index.js:18:20
+2015-04-25T20:02:24.484086+00:00 app[web.1]: Listening at http://:::19579
+2015-04-26T00:50:28.267676+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-04-26T00:50:28.267693+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-04-26T00:50:29.185714+00:00 app[web.1]: Sun, 26 Apr 2015 00:50:29 GMT body-parser deprecated undefined extended: provide extended option at lib/index.js:18:20
+2015-04-26T00:50:29.210588+00:00 app[web.1]: Listening at http://:::45092
+2015-04-26T00:50:31.676968+00:00 app[web.1]: ::ffff:10.228.26.60 - - [26/Apr/2015:00:50:31 +0000] "POST /twiml/dial?Digits=%2B33638782837 HTTP/1.1" 403 22 "-" "TwilioProxy/1.1"
+2015-04-26T00:51:49.315238+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-04-26T00:51:49.315170+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-04-26T00:51:50.352423+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:336:15)
+2015-04-26T00:51:50.352420+00:00 app[web.1]:           ^
+2015-04-26T00:51:50.352421+00:00 app[web.1]: Error: Cannot find module 'cookie-session'
+2015-04-26T00:51:50.352432+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:478:10)
+2015-04-26T00:51:50.352426+00:00 app[web.1]:     at Module.require (module.js:365:17)
+2015-04-26T00:51:50.352428+00:00 app[web.1]:     at require (module.js:384:17)
+2015-04-26T00:51:50.352429+00:00 app[web.1]:     at Object.<anonymous> (/app/lib/index.js:8:15)
+2015-04-26T00:51:50.352425+00:00 app[web.1]:     at Function.Module._load (module.js:278:25)
+2015-04-26T00:51:50.352413+00:00 app[web.1]: module.js:338
+2015-04-26T00:51:50.352418+00:00 app[web.1]:     throw err;
+2015-04-26T00:51:50.352435+00:00 app[web.1]:     at Function.Module._load (module.js:310:12)
+2015-04-26T00:51:50.352430+00:00 app[web.1]:     at Module._compile (module.js:460:26)
+2015-04-26T00:51:50.352436+00:00 app[web.1]:     at Module.require (module.js:365:17)
+2015-04-26T00:51:50.352433+00:00 app[web.1]:     at Module.load (module.js:355:32)
+2015-04-26T00:51:59.274254+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-04-26T00:51:59.274272+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-04-26T00:51:59.985719+00:00 app[web.1]: module.js:338
+2015-04-26T00:51:59.985724+00:00 app[web.1]:     throw err;
+2015-04-26T00:51:59.985726+00:00 app[web.1]:           ^
+2015-04-26T00:51:59.985728+00:00 app[web.1]: Error: Cannot find module 'cookie-session'
+2015-04-26T00:51:59.985731+00:00 app[web.1]:     at Function.Module._load (module.js:278:25)
+2015-04-26T00:51:59.985732+00:00 app[web.1]:     at Module.require (module.js:365:17)
+2015-04-26T00:51:59.985734+00:00 app[web.1]:     at require (module.js:384:17)
+2015-04-26T00:51:59.985735+00:00 app[web.1]:     at Object.<anonymous> (/app/lib/index.js:8:15)
+2015-04-26T00:51:59.985737+00:00 app[web.1]:     at Module._compile (module.js:460:26)
+2015-04-26T00:51:59.985757+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:478:10)
+2015-04-26T00:51:59.985729+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:336:15)
+2015-04-26T00:51:59.985759+00:00 app[web.1]:     at Module.load (module.js:355:32)
+2015-04-26T00:51:59.985760+00:00 app[web.1]:     at Function.Module._load (module.js:310:12)
+2015-04-26T00:51:59.985762+00:00 app[web.1]:     at Module.require (module.js:365:17)
+2015-04-26T00:52:04.921104+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-04-26T00:52:04.921125+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-04-26T00:52:05.364001+00:00 app[web.1]:     throw err;
+2015-04-26T00:52:05.363993+00:00 app[web.1]: module.js:338
+2015-04-26T00:52:05.364007+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:336:15)
+2015-04-26T00:52:05.364005+00:00 app[web.1]: Error: Cannot find module 'cookie-session'
+2015-04-26T00:52:05.364003+00:00 app[web.1]:           ^
+2015-04-26T00:52:05.364008+00:00 app[web.1]:     at Function.Module._load (module.js:278:25)
+2015-04-26T00:52:05.364010+00:00 app[web.1]:     at Module.require (module.js:365:17)
+2015-04-26T00:52:05.364011+00:00 app[web.1]:     at require (module.js:384:17)
+2015-04-26T00:52:05.364013+00:00 app[web.1]:     at Object.<anonymous> (/app/lib/index.js:8:15)
+2015-04-26T00:52:05.364014+00:00 app[web.1]:     at Module._compile (module.js:460:26)
+2015-04-26T00:52:05.364015+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:478:10)
+2015-04-26T00:52:05.364017+00:00 app[web.1]:     at Module.load (module.js:355:32)
+2015-04-26T00:52:05.364018+00:00 app[web.1]:     at Function.Module._load (module.js:310:12)
+2015-04-26T00:52:05.364020+00:00 app[web.1]:     at Module.require (module.js:365:17)
