@@ -32,6 +32,13 @@ describe('Messages Parser', function() {
         expect(r.phone).to.equal("+140145170479");
     });
 
+    it('should not parse a text action without phone', function() {
+        var r = parser.parse("betty: Text hello");
+
+        expect(r).to.be.ok;
+        expect(r.type).to.equal("unknown");
+    });
+
     it('should correctly parse a stop action', function() {
         var r = parser.parse("betty: Stop this conversation");
 
