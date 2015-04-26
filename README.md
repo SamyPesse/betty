@@ -20,17 +20,17 @@ When receiving a call, Betty will forward it to an available team member.
 
 ##### Forward text messages to team members
 
-Like calls, when receiving an SMS, Betty will forward it to all of your team members, the first one to answer will start a session with this caller.
+Like calls, when receiving an SMS, Betty will forward it to all of your team members, the first one to answer will start a session with this caller, he can after that stop the conversation by sending `betty: stop`.
 
 ##### Makes it easy for your employee to pass phone calls from the organization
 
 When a team member is calling Betty, he/she can ask to be put in touch with a specific number, Betty will dial the number and forward the call to you.
 
-This also works for text messages, simply text Betty with `Call +140145170479` or `Text +140145170479`.
+This also works for text messages, simply text Betty with `betty: Call +140145170479` or `betty: Text +140145170479`.
 
 ##### Phone directory for your team members
 
-A team member can also contact Betty to get access to the organization directory (using phone call or sms). For example, just text Betty with: `What is Aaron's phone number?`.
+A team member can also contact Betty to get access to the organization directory (using phone call or sms). For example, just text Betty with: `betty: What is Aaron's phone number?`.
 
 ### Web Dashboard
 
