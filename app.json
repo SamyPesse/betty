@@ -1,6 +1,7 @@
 {
     "name": "Betty",
     "description": "Open source Google Voice with Receptionist abilities",
+    "logo": "https://github.com/SamyPesse/betty/raw/master/public/images/betty.png?raw=true",
     "repository": "https://github.com/SamyPesse/betty",
     "website": "https://github.com/SamyPesse/betty",
     "keywords": ["receptionist", "phone", "sms", "betty", "twilio"],
