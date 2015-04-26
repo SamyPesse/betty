@@ -18,7 +18,8 @@
         "natural": "0.2.1",
         "nunjucks": "1.3.3",
         "moment": "2.10.2",
-        "normall": "0.2.2"
+        "normall": "0.2.2",
+        "natural": "0.2.1"
     },
     "devDependencies": {
         "mocha": "2.2.4",
@@ -30,7 +31,7 @@
         "test": "mocha --reporter list"
     },
     "bugs": {
-        "url": "https://github.com/SamyPesse/betty"
+        "url": "https://github.com/SamyPesse/betty/issues"
     },
     "authors": [
         {
