@@ -46,4 +46,11 @@ describe('Messages Parser', function() {
         expect(r.type).to.equal("stop");
     });
 
+    it('should correctly handle other receptionist names', function() {
+        var r = parser.parse("ben: Stop this conversation", { receptionist: "Ben" });
+
+        expect(r).to.be.ok;
+        expect(r.type).to.equal("stop");
+    });
+
 });
