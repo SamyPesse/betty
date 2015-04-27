@@ -11,7 +11,6 @@
         },
         "SECRET": {
             "description": "Secret token for web authentication",
-            "required": false
         },
         "SESSION_SECRET": {
             "description": "Secret token for sessions",
