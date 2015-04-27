@@ -10,7 +10,7 @@
             "description": "Hostname where Betty will be running (including protocol)"
         },
         "SECRET": {
-            "description": "Secret token for web authentication",
+            "description": "Secret token for web authentication"
         },
         "SESSION_SECRET": {
             "description": "Secret token for sessions",
